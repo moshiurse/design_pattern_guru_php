@@ -1,5 +1,7 @@
 <?php
 
+use Singleton\Singleton;
+
 class Logger extends Singleton{
 
     private $fileHandle;
@@ -15,6 +17,7 @@ class Logger extends Singleton{
 
     public static function log(string $message): void {
         $logger = static::getInstances();
-        $logger->writeLog($message);
+        print_r($logger);
+        // $logger->writeLog($message);
     }
 }
