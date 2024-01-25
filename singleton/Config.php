@@ -1,6 +1,7 @@
 <?php
 
-require_once './Singleton.php';
+use Singleton\Singleton;
+
 class Config extends Singleton{
 
     private $hashMap = [];
