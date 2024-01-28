@@ -19,7 +19,7 @@ class Singleton {
     public static function getInstances(){
         $subclass = static::class;
 
-        if(isset(self::$instances[$subclass])){
+        if(!isset(self::$instances[$subclass])){
             self::$instances[$subclass] = new static();
         }
 
