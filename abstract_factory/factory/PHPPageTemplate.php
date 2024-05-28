@@ -1,8 +1,10 @@
 <?php
 
+namespace DesignPattern\AbstractFactory;
 use DesignPattern\AbstractFactory\BasePageTemplate;
 
-class PHPTemplatePageTemplate extends BasePageTemplate{
+
+class PHPPageTemplate extends BasePageTemplate{
     
     public function getTemplateString(): string
     {
